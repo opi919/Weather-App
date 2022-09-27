@@ -48,7 +48,7 @@ class _CurrentWeatherPageState extends State<CurrentWeatherPage> {
   Future getCurrentWeather() async {
     late Weather weather;
     String city = "Dhaka";
-    String apiKey = "2317a35c6a10c1657d739fcc89ce2f36";
+    String apiKey = "";
     var url = "https://api.openweathermap.org/data/2.5/weather?q=$city&appid=$apiKey&units=metric";
 
     final response = await http.get(Uri.parse(url));
